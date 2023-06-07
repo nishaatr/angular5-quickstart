@@ -5,7 +5,7 @@
 /dist-server
 /tmp
 /out-tsc
-
+// NISHAAT COMMENT
 # dependencies
 /node_modules
 
@@ -13,14 +13,13 @@
 /.idea
 .project
 .classpath
-.c9/
+.c9/// NISHAAT COMMENT
 *.launch
 .settings/
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
+!.vscode/settings.json// NISHAAT COMMENT
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
