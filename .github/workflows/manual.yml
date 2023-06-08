@@ -1,0 +1,22 @@
+name: Report Metrics 2
+
+on:
+  schedule:
+    # At 16:00 UTC every Friday (aka 11am EST, 12pm EDT)
+    - cron: "0 16 * * 5"
+
+jobs:
+  report:
+    name: Slack
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Addepar/github-metrics@v1.2.0
+        with:
+          github-owner: bantic
+          github-repo: github-metrics
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          slack-app-token: ${{secrets.SLACK_APP_TOKEN}}
+          slack-channel-id: ${{secrets.SLACK_CHANNEL_ID}}
+          post-to-slack: "true"
+          log-debug-messages: "true"
