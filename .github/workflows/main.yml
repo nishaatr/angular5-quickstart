@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: Addepar/github-metrics@v1.2.0
         with:
-          github-owner: bantic
-          github-repo: github-metrics
+          github-owner: nishaatr
+          github-repo: nishaatr/angular5-quickstart
           github-token: ${{secrets.GITHUB_TOKEN}}
           log-debug-messages: "true"
