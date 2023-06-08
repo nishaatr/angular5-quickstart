@@ -13,4 +13,5 @@ jobs:
           github-owner: nishaatr
           github-repo: angular5-quickstart
           github-token: ${{secrets.GITHUB_TOKEN}}
+          post-to-slack: "true"
           log-debug-messages: "true"
