@@ -15,5 +15,5 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           slack-app-token: ${{secrets.SLACK_APP_TOKEN}}
           slack-channel-id: ${{secrets.SLACK_CHANNEL_ID}}
-          post-to-slack: "true"
+          post-to-slack: "false"
           log-debug-messages: "true"
