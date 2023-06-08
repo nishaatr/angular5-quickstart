@@ -1,9 +1,6 @@
 name: Report Metrics
 
-on:
-  schedule:
-    # At 16:00 UTC every Friday (aka 11am EST, 12pm EDT)
-    - cron: "0 16 * * 5"
+on: [workflow_dispatch]
 
 jobs:
   report:
